@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHÓM 1 _ 12SĐ</title>
+
+    <!-- Font Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #dfe9f3, #ffffff);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* =====================
+           BANNER + TITLE
+        ===================== */
+        .banner {
+            width: 100%;
+            height: 330px;
+            background-image: url("https://i.pinimg.com/1200x/df/06/1f/df061ffbf30e83b0c13a8cdca9241f5e.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .banner-title {
+            position: absolute;
+            top: 50%;                     /* GIỮA banner */
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            font-family: 'Quicksand', sans-serif;
+            font-size: 60px;              /* đẹp nhất với Quicksand */
+            font-weight: 700;
+            color: #F37021;               /*cam*/
+
+            background: rgba(255, 255, 255, 0.25);
+            padding: 12px 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 3px;
+        }
+
+        /* =====================
+           TIÊU ĐỀ PHẦN
+        ===================== */
+        h2 {
+            text-align: center;
+            margin: 40px 0 10px;
+            font-size: 28px;
+            letter-spacing: 1px;
+            color: #333;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* =====================
+           CARD THÀNH VIÊN
+        ===================== */
+        .members, .lessons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px 40px;
+        }
+
+        .card {
+            width: 200px;
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: 0.3s ease-in-out;
+            animation: fadeCard 0.8s ease-out;
+            text-decoration: none;
+            color: black;
+        }
+
+        @keyframes fadeCard {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        h3 {
+            margin-top: 12px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* =====================
+           FOOTER PASTEL
+        ===================== */
+        .footer-news {
+            background: #eef4fa;
+            color: #333;
+            padding: 40px 20px 20px;
+            margin-top: 40px;
+            border-top: 3px solid #cdd9e5;
+            font-size: 15px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 300px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #2a4f6e;
+            border-left: 4px solid #7bb6e6;
+            padding-left: 8px;
+        }
+
+        .footer-section a {
+            color: #4a89c7;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #cfd8e1;
+            color: #555;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ======= BANNER ======= -->
+    <div class="banner">
+        <div class="banner-title">GROUP 1 - 12 SU DIA</div>
+    </div>
+
+    <!-- ======= THÀNH VIÊN ======= -->
+    <h2>🌷 GIỚI THIỆU THÀNH VIÊN 🌷</h2>
+
+    <div class="members">
+
+        <div class="card" onclick="location.href='thanhvien1.html'">
+            <img src="https://i.pinimg.com/736x/c7/43/32/c74332423bcee5a6852f3f2a2cb42996.jpg">
+            <h3>Xuân Yến</h3>
+        </div>
+
+        <div class="card" onclick="location.href='thanhvien2.html'">
+            <img src="https://i.pinimg.com/1200x/0f/bc/e2/0fbce2014ddf9be84f3ad95a92782053.jpg">
+            <h3>Mỹ Uyên</h3>
+        </div>
+
+        <div class="card" onclick="location.href='thanhvien3.html'">
+            <img src="https://i.pinimg.com/736x/8e/40/2e/8e402e57d2ec2928a4a81d196db2c9ec.jpg">
+            <h3>Tường Vy</h3>
+        </div>
+
+        <div class="card" onclick="location.href='thanhvien4.html'">
+            <img src="https://i.pinimg.com/736x/83/50/f1/8350f1faff5c435230f7b3c951322267.jpg">
+            <h3>Thảo Hiền</h3>
+        </div>
+
+        <div class="card" onclick="location.href='thanhvien5.html'">
+            <img src="https://i.pinimg.com/736x/20/c5/08/20c508cc4173e9e179d99d15b4ba74ed.jpg">
+            <h3>Trương Tuyền</h3>
+        </div>
+
+    </div>
+
+    <!-- ======= BÀI HỌC ======= -->
+    <h2>📘 BÀI HỌC - THUYẾT TRÌNH 📘</h2>
+
+    <div class="lessons">
+        <a href="https://www.canva.com/design/DAG5cebWjFs/LQswfeiJDwunqhQ9QJ5Qyw/edit" class="card"><h3>BÀI 8</h3></a>
+        <a href="https://www.canva.com/design/DAG5cZmBvmI/OFyI5eGZCtFHxFp3Jqw4xg/edit" class="card"><h3>BÀI 9</h3></a>
+        <a href="https://www.canva.com/design/DAG5cf81ow0/wCCREo-BdxjqWG95TBGbMQ/edit" class="card"><h3>BÀI 10</h3></a>
+        <a href="https://www.canva.com/design/DAG5m2e4LyA/EZC9CsAmsGmpxTE2WjEGnA/edit" class="card"><h3>BÀI 11</h3></a>
+        <a href="https://www.canva.com/design/DAG5m7nAY4s/-acLMYHoV6GC2tvQ6cfVYA/edit" class="card"><h3>BÀI 12</h3></a>
+    </div>
+ <!-- =====================
+         FOOTER
+    ===================== -->
+    <footer class="footer-news">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h4>📌 NHÓM 1 – LỚP 12SĐ</h4>
+                <p>Website học tập – thuyết trình của nhóm.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>📞 THÔNG TIN LIÊN HỆ</h4>
+                <p>Email: <a href="MAIL:nhom1.12sd@gmail.com">nhom1.12sd@gmail.com</a></p>
+                <p>Điện thoại: 0211121530</p>
+                <p>Facebook: <a href="#">facebook.com/nhom1.12sd</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>📍 ĐỊA CHỈ</h4>
+                <p>TRƯỜNG THPT CHUYÊN BẾN TRE </p>
+                <p>Lớp 12SỬ_ĐỊA – K33</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Nhóm 1 – 12SĐ| CẢM ƠN BẠN ĐÃ GHÉ QUA💖
+        </div>
+    </footer>
+
+</body>
+</html>
